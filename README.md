@@ -37,6 +37,8 @@ git clone https://github.com/ppibburr/mruby-gobject-introspection.git
 git clone https://github.com/ppibburr/mruby-girffi.git
 git clone https://github.com/ppibburr/mruby-gtk3.git
 
+cd ..
+
 # ensure ffi gem is installed
 # gem i ffi
 
