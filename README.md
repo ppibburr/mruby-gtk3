@@ -27,3 +27,18 @@ end
 
 Gtk::main()
 ```
+
+USING Gtk version 3.x from CRuby (1.9.x)
+===
+```bash
+mkdir ffi_libs
+cd ffi_libs
+git clone https://github.com/ppibburr/mruby-gobject-introspection.git
+git clone https://github.com/ppibburr/mruby-girffi.git
+git clone https://github.com/ppibburr/mruby-gtk3.git
+
+# ensure ffi gem is installed
+# gem i ffi
+
+ruby -rffi -rffi_libs/mruby-gobject-introspection/mrblib/gir.rb -rffi_libs/mruby-girffi/mrblib/mrb_girffi.rb -rffi_libs/mruby-gtk3/mrblib/gtk3.rb path/to/file.rb
+```
