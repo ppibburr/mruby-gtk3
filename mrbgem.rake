@@ -1,3 +1,5 @@
+  ## Conflicts with `mruby-gtk2`
+  
   MRuby::Gem::Specification.new('mruby-gtk3') do |spec|
     spec.license = 'MIT'
     spec.authors = ['ppibburr']
