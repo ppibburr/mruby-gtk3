@@ -15,7 +15,7 @@ Requirements
 
 Example
 ===
-```
+```ruby
 Gtk::init()
 
 w = Gtk::Window.new(:toplevel)
@@ -26,4 +26,4 @@ b.signal_connect("clicked") do |widget, data|
 end
 
 Gtk::main()
-```ruby
+```
