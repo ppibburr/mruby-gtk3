@@ -1,6 +1,6 @@
 mruby-gtk3
 ==========
-Gtk bindings to [https://github.com/mruby/mruby](mruby). uses [https://github.com/ppibburr/mruby-girffi](mruby-girffi)
+Gtk bindings to [mruby](https://github.com/mruby/mruby). uses [mruby-girffi](https://github.com/ppibburr/mruby-girffi)
 
 Synopsis
 ===
@@ -8,7 +8,7 @@ A small convenience library that makes working with Gtk easier
 
 Requirements
 ===
-* [https://github.com/ppibburr/mruby-girffi](mruby-girffi) (MRBGEM)
+* [mruby-girffi](https://github.com/ppibburr/mruby-girffi) (MRBGEM)
 * the requirements for mruby-girffi
 * libgtk3
 * GIRepository typelib information for Gtk3
