@@ -3,5 +3,5 @@
     spec.authors = ['ppibburr']
     spec.version = "0.0.1"
     
-    spec.add_dependency('mruby-girffi', '>= 0.0.0')')        
+    spec.add_dependency('mruby-girffi', '>= 0.0.0')     
   end
