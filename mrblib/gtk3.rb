@@ -1,5 +1,5 @@
 ## Explicit declaration to use version 3.0
-GirFFI.bind :Gtk, 3.0
+GirFFI.setup :Gtk, 3.0
 
 ## TODO: any version 3 specific handling.
 ##       Thus far I've not found any
