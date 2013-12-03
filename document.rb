@@ -24,7 +24,11 @@ Dir.chdir "../../"
 `rm -rf tmp`
 
 __END__
-DocGen.skip Gtk, :init
+DocGen.overide Gtk, :init do
+  param :argv => [[String], "Argument vector", true]
+  returns "void"
+end
+
 dg = DocGen.new(Gtk)
 ns = dg.document()
 
