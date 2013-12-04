@@ -1,7 +1,7 @@
-[mruby-girffi]: (http://github.com/ppibburr/mruby-girffi)
-[mruby-girffi-docgen]: (http://github.com/ppibburr/mruby-girffi-docgen)
-[doc]: (http://ppibburr.github.com/mruby-gtk3)
-[ppibburr]: (http://github.com/ppibburr)
+[mruby-girffi]: http://github.com/ppibburr/mruby-girffi
+[mruby-girffi-docgen]: http://github.com/ppibburr/mruby-girffi-docgen
+[doc]: http://ppibburr.github.com/mruby-gtk3
+[ppibburr]: http://github.com/ppibburr
 
 About
 ===
