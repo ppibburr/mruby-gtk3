@@ -16,7 +16,7 @@ This creates YARD documentation at `./doc`
   
 Requires [mruby-girffi-docgen][mruby-girffi-docgen]  
 
-Also, YARD documentation is available [doc][here].
+Also, YARD documentation is available [here][doc].
 
 Examples
 ===
