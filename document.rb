@@ -29,6 +29,37 @@ DocGen.overide Gtk, :init do
   returns "void"
 end
 
+DocGen.overide Gtk::ListStore, :set do
+  symbol :gtk_list_store_set
+  scope :instance
+  
+  param :iter => ["Gtk::TreeIter", "The iter"]
+  param :col  => [Integer, "The column"]
+  param :val  => ["::Object", "The Value"]
+  
+  returns "void"
+end
+
+DocGen.overide Gtk::TreeModel, :get do
+  symbol :gtk_tree_model_get
+  scope :instance
+  
+  param :iter => ["Gtk::TreeIter", "The iter"]
+  param :col  => [Integer, "The column"]
+  
+  returns "::Object", "the value"
+end
+
+DocGen.overide Gtk::TreeModel, :get_value do
+  symbol :gtk_tree_model_get_value
+  scope :instance
+  
+  param :iter => ["Gtk::TreeIter", "The iter"]
+  param :col  => [Integer, "The column"]
+  
+  returns "GObject::Value", "that wraps the value"
+end
+
 dg = DocGen.new(Gtk)
 ns = dg.document()
 
