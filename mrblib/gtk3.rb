@@ -1,4 +1,4 @@
-GirFFI::setup :Gtk,'3.0'
+GirFFI::setup :Gtk#,'3.0'
 
 module Gtk
   # we're overiding Gtk::init
@@ -13,9 +13,17 @@ module Gtk
   # overide Gtk::init
   #
   # @param argv Array<String> or nil, may be omitted from call
-  def self.init argv=nil
+  def self.init *o
+    if o[0].is_a? Array
+      argv = o[0]
+    end
+    
     if argv
       return _init_(argv.length, argv)
+    end
+    
+    if o[0].is_a?(Integer) and o[1].is_a?(Array)
+      return _init_(o[0], o[1])
     end
     
     return _init_(0,nil)
